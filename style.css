@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+.egp,
+.arb,
+.math,
+.phy,
+.tcs,
+.enh,
+.bg,
+.equ {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.egp  { background-image: url(img/eg.jpg); }
+.equ  { background-image: url(img/eq.jpg); }
+.arb  { background-image: url(img/arb.jpg); }
+.math { background-image: url(img/math.jpg); }
+.phy  { background-image: url(img/phy.jpg); }
+.tcs  { background-image: url(img/TCS.jpg); }
+.enh  { background-image: url(img/eng.jpg); }
+.bg   { background-image: url(img/b.jpg); }
+
+.eg1,
+.ar1,
+.ma1,
+.ph1,
+.tc1,
+.en1,
+.b1,
+.eq1 {
+  background-color: rgba(63, 67, 73, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 4rem;
+  margin: 2rem 1rem;
+  text-align: center;
+  max-width: calc(100% - 2rem);
+  overflow-wrap: anywhere;
+}
+
+.eg2,
+.ar2,
+.ma2,
+.ph2,
+.tc2,
+.en2,
+.b2,
+.eq2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.eg3,
+.ar3,
+.ma3,
+.ph3,
+.tc3,
+.en3,
+.b3,
+.eq3 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  font-size: 1.3rem;
+  background-color: rgba(1, 108, 248, 0.5);
+}
+.foot{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .eg1,
+  .ar1,
+  .ma1,
+  .ph1,
+  .tc1,
+  .en1,
+  .b1,
+  .eq1 {
+    padding: 2rem;
+  }
+  .eg2,
+  .ar2,
+  .ma2,
+  .ph2,
+  .tc2,
+  .en2,
+  .b2,
+  .eq2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
